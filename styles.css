@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: max(200px,20%) max(500px, 80%);
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    background-color: #FFFFFF;
+    grid-column: 2 / 3;
+}
+
+.sidebar #logo {
+    padding: 5px 25px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.sidebar #admin {
+    padding: 5px 25px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar #admin i {
+   padding-top: 3px;
+}
+
+.sidebar #settings {
+    padding: 5px 25px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 6fr 1fr 1fr 1fr;
+    align-content: flex-end;
+}
+
+.sidebar #settings i {
+    padding-top: 3px;
+}
+
+
+
+.sidebar {
+    background-color: rgb(25, 146, 212);
+    grid-row: 1 / 3;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr 5fr;
+}
+
+
+
+.main-container {
+    background-color: #E2E8F0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 1.5em 0;
+    font-size: 1.2em;
+}

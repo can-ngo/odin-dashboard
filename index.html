@@ -11,8 +11,36 @@
 <body>
     
     <section class="header">
-        <h1>Header</h1>
-
+        <div id="search">
+            <label for="searchvalue"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input 
+                type="text" 
+                id="searchvalue" 
+                style=
+                    "border: none;
+                     border-radius: 10px;
+                     height: 2em;
+                     width: 85%;
+                     background-color: #E2E8F0;
+                    ">
+        </div>
+        <div id="notification">
+            <i class="fa-regular fa-bell"></i>
+            <img src="/favicon/favicon-32x32.png" alt="can logo">
+            <span>Can Ngo</span> 
+        </div>
+        <div id="status">
+            <img src="favicon/android-chrome-192x192.png" width="50px" height="50px" alt="canngo logo">
+            <div>
+                <p style="margin: 0;"><strong>Hi there,</strong></p>
+                <h3 style="margin: 0 0 10px 0;">Can Ngo (@canngo)</h3>
+            </div>
+        </div>
+        <div id="actions">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
     </section>
 
     <section class="sidebar">
@@ -47,7 +75,49 @@
     </section>
 
     <section class="main-container">
-        <h1>main container</h1>
+        <div id="projects">Projects</div>
+        <div id="announcement">
+            <span 
+                style="
+                    margin-bottom: 10px;
+                    font-size: 1.2em;
+                "
+            >
+                <strong>Announcements</strong>
+            </span>
+            <div id="announ-box">
+                <h5>Site Maintenance</h5>
+                <p>Voluptatem ad quod sed consequuntur excepturi, eligendi architecto delectus quo.</p>
+                <hr>
+                <h5>Community Share Day</h5>
+                <p>Officiis eligendi ea nihil excepturi doloremque quod necessitatibus harum debitis. Pariatur optio cumque minus incid.</p>
+                <hr>
+                <h5>Updated Privacy Policy</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In beatae illum dicta eligendi quod tempora. Quae tenetur qui ipsa laudantium!</p>
+            </div>
+        </div>
+
+        <div id="trending">
+            <span 
+                style="
+                    margin-bottom: 10px;
+                    font-size: 1.2em;
+                "
+            >
+                <strong>Trending</strong>
+            </span>
+            <div id="trending-box">
+                <h5>Site Maintenance</h5>
+                <p>Architecto delectus quo.</p>
+                <hr>
+                <h5>Community Share Day</h5>
+                <p>Pariatur optio cumque minus incid.</p>
+                <hr>
+                <h5>Updated Privacy Policy</h5>
+                <p>In beatae illum dicta eligendi quod tempora. Quae tenetur qui ipsa laudantium!</p>
+            </div>
+        </div>
+        
     </section>
 </body>
 </html>

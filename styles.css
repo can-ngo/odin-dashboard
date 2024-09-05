@@ -9,14 +9,61 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-columns: max(200px,20%) max(500px, 80%);
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
 .header {
     background-color: #FFFFFF;
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.header #search {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 1em;
+}
+
+.header #notification {
+    display: flex;
+    font-size: 1.3em;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header #status {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 2em;
+}
+
+.header #actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.header button {
+    border: none;
+    border-radius: 15px;
+    height: 2.5em;
+    width: 7em;
+    background-color: rgb(25, 146, 212);
+    color: white;
 }
 
 .sidebar #logo {
@@ -53,15 +100,57 @@ body {
 .sidebar {
     background-color: rgb(25, 146, 212);
     grid-row: 1 / 3;
+    grid-column: 1 / 2;
     color: white;
     display: grid;
     grid-template-rows: 1fr 3fr 5fr;
 }
 
+.main-container #projects {
+    background-color: bisque;
+    grid-row: 1 / 3;
+}
 
+.main-container #announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.main-container #announcement #announ-box,
+.main-container #trending #trending-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 10px;
+    width: 90%;
+
+}
+
+.main-container #announcement #announ-box h5,
+.main-container #announcement #announ-box p,
+.main-container #trending #trending-box h5,
+.main-container #trending #trending-box p {
+    margin: 0;
+}
+
+.main-container #trending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
 
 .main-container {
     background-color: #E2E8F0;
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
 }
 
 ul {
@@ -72,3 +161,4 @@ ul li {
     margin: 1.5em 0;
     font-size: 1.2em;
 }
+
